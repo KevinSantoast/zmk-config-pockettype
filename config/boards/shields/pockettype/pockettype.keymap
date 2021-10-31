@@ -36,7 +36,7 @@
 				&trans   &kp INS  &kp HOME &kp PG_UP &none   &none   &none   &none   &none   &none   &none   &none
 				&trans   &kp DEL  &kp END  &kp PG_DN &none   &none   &none   &none   &none   &none   &none   &none
 				&trans   &none    &none    &none     &none   &none   &none   &none   &none   &none   &none   &none
-				&kp C_PREV &kp C_PP &kp C_NEXT &trans &trans &trans &trans &trans &trans &trans &reset &bootloader
+				&kp C_PREV &kp C_PP &kp C_NEXT &trans &reset &bootloader &reset &trans &trans &trans &trans  &trans
 		};
 	};
 };
