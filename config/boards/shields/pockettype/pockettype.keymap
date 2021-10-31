@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 
 / {
@@ -36,7 +37,8 @@
 				&trans   &kp INS  &kp HOME &kp PG_UP &none   &none   &none   &none   &none   &none   &none   &none
 				&trans   &kp DEL  &kp END  &kp PG_DN &none   &none   &none   &none   &none   &none   &none   &none
 				&trans   &none    &none    &none     &none   &none   &none   &none   &none   &none   &none   &none
-				&kp C_PREV &kp C_PP &kp C_NEXT &trans &reset &bootloader &reset &trans &trans &trans &trans  &trans
+				&kp C_PREV &kp C_PP &kp C_NEXT &trans &out OUT_USB &out OUT_TOG &out OUT_BLE &trans &trans &trans &reset &bootloader
+			>;
 		};
 	};
 };
