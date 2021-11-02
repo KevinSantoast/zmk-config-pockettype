@@ -16,28 +16,28 @@
 		
 		default_layer {
 			bindings = <
-				&kp ESC    &kp Q    &kp W    &kp E    &kp R  &kp T   &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSLH
-				&kp TAB    &kp A    &kp S    &kp D    &kp F  &kp G   &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
-				&sk LSHFT  &kp Z    &kp X    &kp C    &kp V  &kp B   &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
-				&sk LCTRL  &sk LGUI &sk LALT &sl 1 &kp SPACE &kp BSPC &kp SPACE &sl 2 &kp LEFT  &kp UP   &kp DOWN  &kp RIGHT
+				&none   &none     &none     &none      &none   &none   &none   &none   &none   &none   &none   &none
+				&sl 1   &kp FSLH  &kp BSLSH &kp Y      &kp V   &kp T   &kp J   &kp I   &kp P   &kp D   &kp K   &sk LCTRL 
+				&sk LSHFT &kp N1  &kp SEMI  &kp Z      &kp W   &kp O   &kp G   &kp N   &kp Q   &kp B   &kp A   &sk LSHFT
+				&sl 2   &kp COMMA &kp DOT   &kp APOS   &kp X   &kp U   &kp H   &kp S   &kp R   &kp L   &kp M   &sk LALT
 			>;
 		};
 
 		lower_layer {
 			bindings = <
-				&kp N1   &kp N2 &kp N3   &kp N4   &kp N5   &kp N6   &kp N7   &kp N8   &kp N9   &kp N0   &kp MINUS &kp EQUAL
-				&kp GRAVE &kp AT &kp HASH &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &kp PIPE &kp BSLH
-				&kp F1   &kp F2 &kp F3   &kp F4   &kp F5   &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp F11   &kp F12
-				&kp C_VOL_UP &kp C_MUTE &kp C_VOL_DN &trans &bt BT_PRV &bt BT_CLR  &bt BT_NXT &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
+				&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+				&trans  &bt BT_SEL 1 &none &none  &none   &none   &none   &none   &none   &none   &none   &none
+				&bt BT_SEL 0 &bt BT_SEL 2  &none  &none   &none   &none   &none   &none   &none   &none   &none   &none
+				&trans  &bt BT_SEL 3 &none &none  &none   &none   &none   &none   &none   &none   &none   &none
 			>;
 		};
 
 		raise_layer {
 			bindings = <
-				&trans   &kp INS  &kp HOME &kp PG_UP &none   &none   &none   &none   &none   &none   &none   &none
-				&trans   &kp DEL  &kp END  &kp PG_DN &none   &none   &none   &none   &none   &none   &none   &none
-				&trans   &none    &none    &none     &none   &none   &none   &none   &none   &none   &none   &none
-				&kp C_PREV &kp C_PP &kp C_NEXT &trans &out OUT_USB &out OUT_TOG &out OUT_BLE &trans &trans &trans &reset &bootloader
+				&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+				&trans  &reset  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+				&out OUT_TOG  &bt BT_CLR &none  &none   &none   &none   &none   &none   &none   &none   &none   &none
+				&trans  &bootloader     &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
 			>;
 		};
 	};
